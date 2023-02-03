@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lending</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script type="text/javascript" src="./js/swiper-bundle.min.js"></script>
+    <script defer type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-line">
+
+                <div class="header-logo">
+                    <img src="./image/logo.png" alt="">
+                </div>
+
+                <div class="nav">
+                    <a class="nav-item" href="#carte">À la carte</a>
+                    <a class="nav-item" href="#swiper">Wijnkaart</a>
+                    <a class="nav-item" href="#">Lunchmenu</a>
+                    <a class="nav-item" href="#">Contact</a>
+                </div>
+
+                <div class="phone">
+                    <div class="phone-holder">
+                        <div class="phone-img">
+                            <img src="image/call-calling.png" alt="">
+                        </div>
+
+                        <div class="number">
+                            <a class="num" href="#">+32 9 282 57 25</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="burger-menu">
+                    <button id="burgerMenu" class="burger-button">
+                        <img src="./image/burger.svg" alt="burger">
+                    </button>
+                    
+                    <div class="burger-list display-list" id="burgerList">
+                        <a class="nav-item block" href="#carte">À la carte</a>
+                        <a class="nav-item block" href="#swiper">Wijnkaart</a>
+                        <a class="nav-item block" href="#">Lunchmenu</a>
+                        <a class="nav-item block" href="#">Contact</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="header-down">
+                <div class="header-title">OPEN EVERYDAY 6AM - 9PM
+                    <div class="header-subtitle">A bad day with lunch is better than a good day without it.</div>
+                    <div class="header-btn">
+                        <a id="reserveTableButtonOpen" class="header-button">Reserve a table</a>
+                        <div class="media-button">
+                            <a class="m-button" href="#" alt="facebook">
+                                <img src="./image/facebook.png" alt="facebook">
+                            </a>
+                            <a class="m-button" href="#" alt="instagram">
+                                <img src="./image/instagram.png" alt="instagram">
+                            </a>
+                            <a class="m-button" href="#" alt="twitter">
+                                <img src="./image/twitter.png" alt="twitter">
+                            </a>
+                            <a class="m-button" href="#" alt="youtube">
+                                <img src="./image/youtube.png" alt="youtube">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-window" id="modalWindow">
+                    <div class="modal-content">
+                        <button class="modal-close" id="modalClose">✖</button>
+                        <div class="modal-header">
+                            <h5 class="modal-title">Een tafel reserveren</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" action="action.php">
+                                <input class = "input-form" type="number" id="countPerson" name="countPerson" placeholder="Hoeveel mensen">
+                                <input class = "input-form" type="text" id="name" name="name" placeholder="Uw naam">
+                                <input class = "input-form" type="tel" id="numberContact" name="numberContact" placeholder="Contact nummer">        
+                                <div class="modal-footer">
+                                    <button type="submit" class="modal-submit">Boek</button>
+                                    <button id="modalCancel" class="modal-cancel">Annuleren</button>
+                                </div>
+                            </form>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+            <div id="carte" class="carte">
+                <div class="container">
+
+                    <div class="carte-holder">
+
+                        <div class="carte-text">
+                            <ul class="carte-list">
+                                <li class="carte-day">Woensdag 12/01</li>
+                                <div class="carte-day-food">
+                                    <div>Salade met Serrano</div>
+
+                                    <div class="dots"><svg width="60" height="22">
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                        </svg></div>
+
+                                    <div>Steak Tartaar</div>
+                                </div>
+
+                                <li class="carte-day">Donderdag 13/01</li>
+                                <div class="carte-day-food">
+                                    <div>Toast Roquefort</div>
+                                    <div class="dots"><svg width="60" height="22">
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                        </svg></div>
+                                    <div>Penne met Kip en Prei</div>
+                                </div>
+
+                                <li class="carte-day">Vrijdag 14/01</li>
+
+                                <div class="carte-day-food">
+                                    <div>Verrassing van de Chef</div>
+                                    <div class="dots"><svg width="60" height="22">
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                        </svg></div>
+                                    <div>Penne met Kip en Prei</div>
+                                </div>
+
+                                <li class="carte-day">Vrijdag 15/01</li>
+
+                                <div class="carte-day-food">
+                                    <div>Verrassing van de Chef</div>
+                                    <div class="dots"><svg width="60" height="22">
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                        </svg></div>
+                                    <div>Penne met Kip en Prei</div>
+                                </div>
+
+                                <li class="carte-day">Vrijdag 16/01</li>
+                                <div class="carte-day-food">
+                                    <div>Verrassing van de Chef</div>
+                                    <div class="dots">
+                                        <svg width="60" height="22">
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                            <circle class="shape" />
+                                        </svg>
+                                    </div>
+                                    <div>Penne met Kip en Prei</div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="carte-images">
+                            <img class="image-2" src="./image/carte-2.png" alt="">
+                            <svg class="svg-rect">
+                                <rect class="rect" x="50" y="20" />
+                            </svg>
+                            <img class="image-1" src="./image/carte-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="swiper" class="swiper-holder">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-quote">Goede service, lekker eten, toffe ambiance</div>
+                            <p class="swiper-quote-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                diam
+                                nonumy eirmod tempor invidunt
+                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                justo
+                                duo
+                                dolores et ea rebum. Stet clita kasd gubergren.
+                            </p>
+                            <div class="swiper-author">
+                                ALAIN HEYNDRICKX
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-quote">Goede service, lekker eten, toffe ambiance</div>
+                            <p class="swiper-quote-text">The pain itself is great, the sadipscing elitr is settled, but
+                                the diam
+                                nonumy eirmo for a time they envy that with labor and pain it was something great, but
+                                the diam
+                                voluptiva. But indeed I will accuse them and just two pains and I will take them back.
+                                Stet
+                                clita kasd gubergren.
+                            </p>
+                            <div class="swiper-author">
+                                ALAIN HEYNDRICKX
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+
+</body>
+
+</html>
